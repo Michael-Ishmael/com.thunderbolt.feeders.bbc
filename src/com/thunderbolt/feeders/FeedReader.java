@@ -1,24 +1,20 @@
 package com.thunderbolt.feeders;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Characters;
 import javax.xml.stream.events.XMLEvent;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class FeedReader {
 
-    private enum FieldType {
-        title, description, channel, language, copyright, link, author, item, pubDate, guid;
-    }
 
-/*    static final String TITLE = "title";
-    static final String DESCRIPTION = "description";
+  static final String TITLE = "title";
+  static final String DESCRIPTION = "description";
     static final String CHANNEL = "channel";
     static final String LANGUAGE = "language";
     static final String COPYRIGHT = "copyright";
@@ -26,9 +22,9 @@ public class FeedReader {
     static final String AUTHOR = "author";
     static final String ITEM = "item";
     static final String PUB_DATE = "pubDate";
-    static final String GUID = "guid";*/
+  static final String GUID = "guid";
 
-    final URL url;
+  final URL url;
 
     public FeedReader(String feedUrl) {
         try {
@@ -61,42 +57,40 @@ public class FeedReader {
             while (eventReader.hasNext()) {
                 XMLEvent event = eventReader.nextEvent();
                 if (event.isStartElement()) {
-                    FieldType localPart = FieldType.valueOf(event.asStartElement().getName()
-                            .getLocalPart());
-                    switch (localPart) {
-                        case item:
-                            if (isFeedHeader) {
-                                isFeedHeader = false;
-                                feed = new Feed(title, link, description, language,
-                                        copyright, pubdate);
-                            }
-                            event = eventReader.nextEvent();
-                            break;
-                        case title:
-                            title = getCharacterData(event, eventReader);
-                            break;
-                        case description:
-                            description = getCharacterData(event, eventReader);
-                            break;
-                        case link:
-                            link = getCharacterData(event, eventReader);
-                            break;
-                        case guid:
-                            guid = getCharacterData(event, eventReader);
-                            break;
-                        case language:
-                            language = getCharacterData(event, eventReader);
-                            break;
-                        case author:
-                            author = getCharacterData(event, eventReader);
-                            break;
-                        case pubDate:
-                            pubdate = getCharacterData(event, eventReader);
-                            break;
-                        case copyright:
-                            copyright = getCharacterData(event, eventReader);
-                            break;
+                  String localPart = event.asStartElement().getName().getLocalPart();
+                  if (localPart.equals(ITEM)) {
+                    if (isFeedHeader) {
+                      isFeedHeader = false;
+                      feed = new Feed(title, link, description, language,
+                          copyright, pubdate);
                     }
+                    event = eventReader.nextEvent();
+
+                  } else if (localPart.equals(TITLE)) {
+                    title = getCharacterData(event, eventReader);
+
+                  } else if (localPart.equals(DESCRIPTION)) {
+                    description = getCharacterData(event, eventReader);
+
+                  } else if (localPart.equals(LINK)) {
+                    link = getCharacterData(event, eventReader);
+
+                  } else if (localPart.equals(GUID)) {
+                    guid = getCharacterData(event, eventReader);
+
+                  } else if (localPart.equals(LANGUAGE)) {
+                    language = getCharacterData(event, eventReader);
+
+                  } else if (localPart.equals(AUTHOR)) {
+                    author = getCharacterData(event, eventReader);
+
+                  } else if (localPart.equals(PUB_DATE)) {
+                    pubdate = getCharacterData(event, eventReader);
+
+                  } else if (localPart.equals(COPYRIGHT)) {
+                    copyright = getCharacterData(event, eventReader);
+
+                  }
                 } else if (event.isEndElement()) {
                     if (event.asEndElement().getName().getLocalPart() == ( "item")) {
                         FeedMessage message = new FeedMessage();
