@@ -2,26 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db08d71b-f82c-4de8-820d-ec86bce59386" name="Default" comment="Commit 1.0.0.0">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/commons-io-2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/httpclient-4.2.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/httpcore-4.2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/httpmime-4.2.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/jcl-over-slf4j-1.6.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/jul-to-slf4j-1.6.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/log4j-1.2.16.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/noggit-0.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/slf4j-api-1.6.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/slf4j-log4j12-1.6.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/wstx-asl-3.2.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/solrj-lib/zookeeper-3.4.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/thunderbolt/indexing/SolrIndexer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/com/thunderbolt/tests/indexing/SolrIndexerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/solrj_lib.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/thunderbolt/thunderbolt.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/com/thunderbolt/scraping/NewsScraperTest.java" afterPath="$PROJECT_DIR$/tests/com/thunderbolt/tests/scraping/NewsScraperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thunderbolt/Clip.java" afterPath="$PROJECT_DIR$/src/com/thunderbolt/Clip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thunderbolt/scraping/NewsScraper.java" afterPath="$PROJECT_DIR$/src/com/thunderbolt/scraping/NewsScraper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="com.thunderbolt.feeders.bbc.iws" />
@@ -135,8 +115,10 @@
       <file leaf-file-name="NewsScraper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thunderbolt/scraping/NewsScraper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="20" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1095">
-              <folding />
+            <state line="30" column="20" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1095">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,9 +146,8 @@
       <file leaf-file-name="SolrIndexerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/com/thunderbolt/tests/indexing/SolrIndexerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="308" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+            <state line="15" column="0" selection-start="308" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="840">
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1154#1160#0" expanded="true" />
               </folding>
             </state>
@@ -185,7 +166,7 @@
       <file leaf-file-name="SolrIndexer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/thunderbolt/indexing/SolrIndexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.43665767" vertical-offset="123" max-vertical-offset="1080">
+            <state line="17" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="0.43665767" vertical-offset="93" max-vertical-offset="1050">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,11 +177,11 @@
       <file leaf-file-name="Clip.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thunderbolt/Clip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="16" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1890">
+            <state line="90" column="16" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1890">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1927#1928#0" expanded="true" />
-                <element signature="e#1951#1952#0" expanded="true" />
+                <element signature="e#1947#1948#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -260,9 +241,9 @@
         <option value="$PROJECT_DIR$/src/com/thunderbolt/Clip.java" />
         <option value="$PROJECT_DIR$/src/com/thunderbolt/indexing/URLConnection.java" />
         <option value="$PROJECT_DIR$/tests/com/thunderbolt/tests/indexing/SolrIndexerTest.java" />
-        <option value="$PROJECT_DIR$/src/com/thunderbolt/indexing/SolrIndexer.java" />
         <option value="$PROJECT_DIR$/tests/com/thunderbolt/tests/integration/thunderboltIntegrationTests.java" />
         <option value="$PROJECT_DIR$/tests/com/thunderbolt/tests/integration/ThunderboltIntegrationTests.java" />
+        <option value="$PROJECT_DIR$/src/com/thunderbolt/indexing/SolrIndexer.java" />
       </list>
     </option>
   </component>
@@ -929,17 +910,21 @@
       <workItem from="1389047271052" duration="7814000" />
       <workItem from="1389113536549" duration="2476000" />
       <workItem from="1389126766844" duration="9592000" />
-      <workItem from="1389136634995" duration="5438000" />
+      <workItem from="1389136634995" duration="5470000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1.0.0.0">
       <created>1389055870780</created>
       <updated>1389055870780</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit 1.0.0.0">
+      <created>1389142098800</created>
+      <updated>1389142098800</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40924000" />
+    <option name="totallyTimeSpent" value="40956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="806" extended-state="6" />
@@ -1242,11 +1227,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thunderbolt/Clip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="16" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1890">
+        <state line="90" column="16" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1890">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="e#1947#1948#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1269,7 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="308" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1154#1160#0" expanded="true" />
           </folding>
         </state>
@@ -1319,8 +1303,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thunderbolt/scraping/NewsScraper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="20" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="1095">
-          <folding />
+        <state line="30" column="20" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1095">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1335,7 +1321,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thunderbolt/indexing/SolrIndexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.43665767" vertical-offset="123" max-vertical-offset="1080">
+        <state line="17" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="0.43665767" vertical-offset="93" max-vertical-offset="1050">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
