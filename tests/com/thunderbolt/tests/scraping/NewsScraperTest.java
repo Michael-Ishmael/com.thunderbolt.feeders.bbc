@@ -1,7 +1,8 @@
-package com.thunderbolt.scraping;
+package com.thunderbolt.tests.scraping;
 
 import com.thunderbolt.Clip;
 import com.thunderbolt.queueing.ClipMessage;
+import com.thunderbolt.scraping.NewsScraper;
 import org.junit.Before;
 import org.junit.Test;
 
